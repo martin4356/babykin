@@ -1,124 +1,104 @@
 
 import { Category, Product, Milestone, Review } from './types';
 
-export const COLORS = {
-  primary: '#F6F1EB',
-  secondary: '#FFD6C9',
-  accent1: '#CFE7D6',
-  accent2: '#DCEEFF',
-  cta: '#FF8F7A',
-  text: '#3A3A3A',
-};
-
 export const CATEGORIES: Category[] = [
-  { id: '1', name: 'Milk Powders', icon: '🍼', color: '#DCEEFF' },
-  { id: '2', name: 'Diapers', icon: '🩲', color: '#FFD6C9' },
-  { id: '3', name: 'Nutrition', icon: '🥣', color: '#CFE7D6' },
-  { id: '4', name: 'Baby Care', icon: '🧴', color: '#F6F1EB' },
-  { id: '5', name: 'Accessories', icon: '🎀', color: '#DCEEFF' },
-  { id: '6', name: 'Toys', icon: '🧸', color: '#FFD6C9' },
-  { id: '7', name: 'Fashion', icon: '👗', color: '#CFE7D6' },
+  { id: '1', name: 'Teething', icon: '🦷', color: '#FEF3C7' }, // Lemon
+  { id: '2', name: 'Bathing', icon: '🛁', color: '#A7F3D0' }, // Mint
+  { id: '3', name: 'Food', icon: '🥣', color: '#E0E7FF' }, // Lavender
+  { id: '4', name: 'Safety', icon: '🛡️', color: '#FFCFBC' }, // Peach
 ];
 
 export const PRODUCTS: Product[] = [
   {
     id: 'p1',
-    name: 'Gentle Cleansing Wash',
-    price: 499,
-    image: 'https://picsum.photos/seed/baby1/400/500',
-    hoverImage: 'https://picsum.photos/seed/baby1alt/400/500',
-    category: 'Baby Care',
-    rating: 5,
+    name: 'Gentle Bunny Romper',
+    price: 899,
+    image: 'https://images.unsplash.com/photo-1522771935876-2497116a7a9e?auto=format&fit=crop&w=600&h=800&q=80',
+    hoverImage: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=600&h=800&q=80',
+    category: 'Clothing',
+    rating: 4.9,
     isNew: true
   },
   {
     id: 'p2',
-    name: 'Super Soft Diapers (Size M)',
-    price: 899,
-    image: 'https://picsum.photos/seed/baby2/400/500',
-    hoverImage: 'https://picsum.photos/seed/baby2alt/400/500',
+    name: 'Cloud-Soft Bamboo Diapers',
+    price: 1250,
+    image: 'https://images.unsplash.com/photo-1544126592-807daa2b567b?auto=format&fit=crop&w=600&h=800&q=80',
+    hoverImage: 'https://images.unsplash.com/photo-1522771935876-2497116a7a9e?auto=format&fit=crop&w=600&h=800&q=80',
     category: 'Diapers',
     rating: 4.8
   },
   {
     id: 'p3',
-    name: 'Organic Fruit Puree',
-    price: 120,
-    image: 'https://picsum.photos/seed/baby3/400/500',
-    hoverImage: 'https://picsum.photos/seed/baby3alt/400/500',
-    category: 'Nutrition',
-    rating: 4.9
+    name: 'Organic Fruit Puree Pots',
+    price: 350,
+    image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&h=800&q=80',
+    hoverImage: 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&h=800&q=80',
+    category: 'Food',
+    rating: 5.0,
+    isNew: true
   },
   {
     id: 'p4',
-    name: 'Handcrafted Wooden Rattle',
-    price: 350,
-    image: 'https://picsum.photos/seed/baby4/400/500',
-    hoverImage: 'https://picsum.photos/seed/baby4alt/400/500',
-    category: 'Toys',
-    rating: 5,
-    isNew: true
+    name: 'Elephant Sensory Teether',
+    price: 499,
+    image: 'https://images.unsplash.com/photo-1555133539-7a355625ee3e?auto=format&fit=crop&w=600&h=800&q=80',
+    hoverImage: 'https://images.unsplash.com/photo-1533558701576-23c65e0272fb?auto=format&fit=crop&w=600&h=800&q=80',
+    category: 'Teething',
+    rating: 4.7
   }
 ];
 
 export const MILESTONES: Milestone[] = [
   {
-    id: 3,
-    age: '3 Months',
-    title: 'First Smile',
-    description: 'Your baby begins to smile at people and can briefly calm themselves.',
-    icon: '😊',
+    id: 0,
+    age: '0-3 Mo',
+    title: 'Tummy Time Fun',
+    description: 'Baby is starting to push up and look around! A huge step in core development.',
+    icon: '🐢',
     recommendations: [PRODUCTS[0], PRODUCTS[3]]
   },
   {
-    id: 6,
-    age: '6 Months',
-    title: 'Sitting Up',
-    description: 'Baby starts to sit with support and rolls over in both directions.',
+    id: 1,
+    age: '3-6 Mo',
+    title: 'Giggle Monster',
+    description: 'First real laughs and discovering their hands. Everything is a wonder!',
+    icon: '🍭',
+    recommendations: [PRODUCTS[1], PRODUCTS[3]]
+  },
+  {
+    id: 2,
+    age: '6-9 Mo',
+    title: 'Sitting Star',
+    description: 'Independence begins! Sitting without support and trying first solids.',
     icon: '🧘',
-    recommendations: [PRODUCTS[1], PRODUCTS[2]]
+    recommendations: [PRODUCTS[2], PRODUCTS[1]]
   },
   {
-    id: 12,
-    age: '12 Months',
-    title: 'First Steps',
-    description: 'Pulling up to stand, walking holding onto furniture, and maybe first steps.',
-    icon: '🚶',
-    recommendations: [PRODUCTS[2], PRODUCTS[3]]
-  },
-  {
-    id: 18,
-    age: '18 Months',
-    title: 'Talking',
-    description: 'Says several single words and points to show someone what they want.',
-    icon: '🗣️',
-    recommendations: [PRODUCTS[0], PRODUCTS[1]]
+    id: 3,
+    age: '9-12 Mo',
+    title: 'Turbo Crawler',
+    description: 'On the move! Exploring every corner and finding hidden treasures.',
+    icon: '👣',
+    recommendations: [PRODUCTS[3], PRODUCTS[2]]
   }
 ];
 
 export const REVIEWS: Review[] = [
   {
     id: 'r1',
-    name: 'Anjali Sharma',
+    name: 'Ananya Roy',
     city: 'Mumbai',
     rating: 5,
-    comment: 'BabyKins has changed my parenting journey! The products are so gentle on my newborn.',
-    avatar: 'https://i.pravatar.cc/150?u=anjali'
+    comment: 'The vibes are so good! My baby looks so cute in these rompers and the diapers are literally like clouds.',
+    avatar: 'https://i.pravatar.cc/150?u=ananya'
   },
   {
     id: 'r2',
-    name: 'Rahul Verma',
-    city: 'Delhi',
+    name: 'Karan Mehra',
+    city: 'Pune',
     rating: 5,
-    comment: 'The wooden toys are amazing. Safe, sustainable, and my son loves them!',
-    avatar: 'https://i.pravatar.cc/150?u=rahul'
-  },
-  {
-    id: 'r3',
-    name: 'Priya Iyer',
-    city: 'Chennai',
-    rating: 5,
-    comment: 'I love the transparency about the ingredients. Makes me feel very secure.',
-    avatar: 'https://i.pravatar.cc/150?u=priya'
+    comment: 'I was looking for a modern Indian brand and BabyKins is it. Vibrant, safe, and truly high quality.',
+    avatar: 'https://i.pravatar.cc/150?u=karan'
   }
 ];

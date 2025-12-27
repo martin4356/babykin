@@ -4,42 +4,36 @@ import { ShieldCheck, Leaf, Heart, MapPin, Award } from 'lucide-react';
 
 const TrustStrip: React.FC = () => {
   const trustSignals = [
-    { icon: <ShieldCheck className="w-8 h-8" />, text: "Pediatrician Approved" },
-    { icon: <Leaf className="w-8 h-8" />, text: "BPA Free & Organic" },
-    { icon: <MapPin className="w-8 h-8" />, text: "Made for Indian Babies" },
-    { icon: <Heart className="w-8 h-8" />, text: "10,000+ Happy Parents" },
-    { icon: <Award className="w-8 h-8" />, text: "Safe & Tested" },
+    { icon: <ShieldCheck className="w-6 h-6" />, text: "Pediatrician Approved", color: "#FF6B6B", bg: "#FFCFBC" },
+    { icon: <Leaf className="w-6 h-6" />, text: "BPA-Free Organic", color: "#059669", bg: "#A7F3D0" },
+    { icon: <MapPin className="w-6 h-6" />, text: "Made for India", color: "#2563EB", bg: "#E0E7FF" },
+    { icon: <Heart className="w-6 h-6" />, text: "50k+ Happy Parents", color: "#DB2777", bg: "#FCE7F3" },
+    { icon: <Award className="w-6 h-6" />, text: "Skin-Safe Tested", color: "#D97706", bg: "#FEF3C7" },
   ];
 
   return (
-    <section className="bg-[#CFE7D6] py-10 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-12">
+    <section className="bg-white py-12 border-y border-[#FFCFBC]/20">
+      <div className="max-w-7xl mx-auto px-6 overflow-x-auto hide-scrollbar">
+        <div className="flex justify-between items-center gap-6 min-w-max">
           {trustSignals.map((signal, idx) => (
             <div 
               key={idx} 
-              className="flex flex-col items-center text-center gap-3 group"
-              style={{ animationDelay: `${idx * 150}ms` }}
+              className="flex items-center gap-4 px-6 py-3 rounded-full shadow-sm hover:shadow-md transition-shadow group cursor-default"
+              style={{ backgroundColor: `${signal.bg}30` }}
             >
-              <div className="text-[#3A3A3A]/70 group-hover:text-[#FF8F7A] transition-colors duration-500 animate-pulse">
+              <div 
+                className="w-10 h-10 rounded-full flex items-center justify-center transition-transform group-hover:rotate-12"
+                style={{ backgroundColor: signal.bg, color: signal.color }}
+              >
                 {signal.icon}
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#3A3A3A]/80">
+              <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#332D2D]/80">
                 {signal.text}
               </span>
             </div>
           ))}
         </div>
       </div>
-      {/* Shine Sweep animation */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 translate-x-[-100%] animate-[shimmer_5s_infinite]" style={{ animationName: 'shimmer' }} />
-      <style>{`
-        @keyframes shimmer {
-          0% { transform: translateX(-100%) skewX(-12deg); }
-          50% { transform: translateX(200%) skewX(-12deg); }
-          100% { transform: translateX(200%) skewX(-12deg); }
-        }
-      `}</style>
     </section>
   );
 };

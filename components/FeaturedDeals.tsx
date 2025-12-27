@@ -1,35 +1,64 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const FeaturedDeals: React.FC = () => {
+  const [offsets, setOffsets] = useState({ card1: { x: 0, y: 0 }, card2: { x: 0, y: 0 } });
+
+  const handleMouseMove = (e: React.MouseEvent, card: 'card1' | 'card2') => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    setOffsets(prev => ({ ...prev, [card]: { x: x * 20, y: y * 20 } }));
+  };
+
+  const handleMouseLeave = (card: 'card1' | 'card2') => {
+    setOffsets(prev => ({ ...prev, [card]: { x: 0, y: 0 } }));
+  };
+
   return (
-    <section className="py-16 px-6 bg-white">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+    <section className="py-24 px-6 bg-white">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Deal 1 */}
-        <div className="group relative rounded-[30px] overflow-hidden bg-gradient-to-br from-[#FFD6C9] to-[#FF8F7A]/20 p-8 h-[320px] cursor-pointer flex items-center transition-all duration-500 hover:shadow-2xl hover:shadow-[#FFD6C9]/40 hover:-translate-y-1">
-          <div className="relative z-10 w-1/2">
-            <span className="text-[#3A3A3A] font-bold uppercase tracking-wider text-xs mb-2 block">Premium Collection</span>
-            <h3 className="text-3xl font-bold font-nunito mb-4 text-[#3A3A3A]">Up to 40% Off Nutrition</h3>
-            <button className="bg-[#3A3A3A] text-white px-6 py-2.5 rounded-full text-sm font-bold group-hover:bg-[#FF8F7A] transition-all duration-300 shadow-lg shadow-[#3A3A3A]/10 group-hover:shadow-[#FF8F7A]/20">
-              Shop Now
+        <div 
+          className="group relative rounded-[40px] overflow-hidden bg-gradient-to-br from-[#FFD6C9] to-[#FF8F7A]/20 p-12 min-h-[400px] cursor-pointer flex flex-col justify-center transition-all duration-500 hover:shadow-2xl hover:shadow-[#FFD6C9]/40"
+          onMouseMove={(e) => handleMouseMove(e, 'card1')}
+          onMouseLeave={() => handleMouseLeave('card1')}
+        >
+          <div className="relative z-10 w-full md:w-3/5">
+            <span className="bg-white/60 text-[#2F2F2F] font-bold uppercase tracking-widest text-[10px] px-4 py-1.5 rounded-full mb-6 inline-block">Bundle & Save</span>
+            <h3 className="text-4xl lg:text-5xl font-extrabold font-nunito mb-6 text-[#2F2F2F] leading-tight">Up to 40% Off Nutrition</h3>
+            <p className="text-[#2F2F2F]/60 mb-8 font-medium">Build a personalized health box for your growing star.</p>
+            <button className="bg-[#2F2F2F] text-white px-8 py-4 rounded-full text-sm font-bold group-hover:bg-[#FF8F7A] transition-all duration-300 shadow-xl group-hover:-translate-y-1">
+              Shop Bundles
             </button>
           </div>
-          <div className="absolute right-[-20px] bottom-[-20px] w-2/3 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-x-4">
-            <img src="https://picsum.photos/seed/babyfood/600/600" alt="Product" className="rounded-2xl shadow-xl transform rotate-3" />
+          <div 
+            className="absolute right-[-40px] bottom-[-40px] w-3/4 pointer-events-none transition-transform duration-300 ease-out"
+            style={{ transform: `translate(${-offsets.card1.x}px, ${-offsets.card1.y}px)` }}
+          >
+            <img src="https://picsum.photos/seed/babyfoodset/800/800" alt="Product" className="rounded-3xl shadow-2xl transform rotate-6 border-[12px] border-white/50" />
           </div>
         </div>
 
         {/* Deal 2 */}
-        <div className="group relative rounded-[30px] overflow-hidden bg-gradient-to-br from-[#DCEEFF] to-[#CFE7D6]/30 p-8 h-[320px] cursor-pointer flex items-center transition-all duration-500 hover:shadow-2xl hover:shadow-[#DCEEFF]/40 hover:-translate-y-1">
-          <div className="relative z-10 w-1/2">
-            <span className="text-[#3A3A3A] font-bold uppercase tracking-wider text-xs mb-2 block">Gift Bundles</span>
-            <h3 className="text-3xl font-bold font-nunito mb-4 text-[#3A3A3A]">Safe Play Toys Starting ₹299</h3>
-            <button className="bg-[#3A3A3A] text-white px-6 py-2.5 rounded-full text-sm font-bold group-hover:bg-[#FF8F7A] transition-all duration-300 shadow-lg shadow-[#3A3A3A]/10 group-hover:shadow-[#FF8F7A]/20">
-              Browse Sets
+        <div 
+          className="group relative rounded-[40px] overflow-hidden bg-gradient-to-br from-[#DCEEFF] to-[#CFE7D6]/30 p-12 min-h-[400px] cursor-pointer flex flex-col justify-center transition-all duration-500 hover:shadow-2xl hover:shadow-[#DCEEFF]/40"
+          onMouseMove={(e) => handleMouseMove(e, 'card2')}
+          onMouseLeave={() => handleMouseLeave('card2')}
+        >
+          <div className="relative z-10 w-full md:w-3/5">
+            <span className="bg-white/60 text-[#2F2F2F] font-bold uppercase tracking-widest text-[10px] px-4 py-1.5 rounded-full mb-6 inline-block">This Week's Top Picks</span>
+            <h3 className="text-4xl lg:text-5xl font-extrabold font-nunito mb-6 text-[#2F2F2F] leading-tight">Safe Play Toys Starting ₹299</h3>
+            <p className="text-[#2F2F2F]/60 mb-8 font-medium">Eco-friendly wooden toys designed for sensory growth.</p>
+            <button className="bg-[#2F2F2F] text-white px-8 py-4 rounded-full text-sm font-bold group-hover:bg-[#FF8F7A] transition-all duration-300 shadow-xl group-hover:-translate-y-1">
+              Browse Picks
             </button>
           </div>
-          <div className="absolute right-[-20px] bottom-[-20px] w-2/3 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-x-4">
-            <img src="https://picsum.photos/seed/babytoys/600/600" alt="Product" className="rounded-2xl shadow-xl transform -rotate-3" />
+          <div 
+            className="absolute right-[-40px] bottom-[-40px] w-3/4 pointer-events-none transition-transform duration-300 ease-out"
+            style={{ transform: `translate(${-offsets.card2.x}px, ${-offsets.card2.y}px)` }}
+          >
+            <img src="https://picsum.photos/seed/babytoyset/800/800" alt="Product" className="rounded-3xl shadow-2xl transform -rotate-6 border-[12px] border-white/50" />
           </div>
         </div>
       </div>
