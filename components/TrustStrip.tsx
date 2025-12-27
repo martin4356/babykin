@@ -8,7 +8,7 @@ const TrustStrip: React.FC = () => {
     { icon: <Leaf className="w-6 h-6" />, text: "BPA-Free Organic", color: "#059669", bg: "#A7F3D0" },
     { icon: <MapPin className="w-6 h-6" />, text: "Made for India", color: "#2563EB", bg: "#E0E7FF" },
     { icon: <Heart className="w-6 h-6" />, text: "50k+ Happy Parents", color: "#DB2777", bg: "#FCE7F3" },
-    { icon: <Award className="w-6 h-6" />, text: "Skin-Safe Tested", color: "#D97706", bg: "#FEF3C7" },
+    { icon: <Award className="w-6 h-6" />, text: "Isofix Safety", color: "#D97706", bg: "#FEF3C7" },
   ];
 
   return (

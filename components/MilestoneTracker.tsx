@@ -108,7 +108,7 @@ const MilestoneTracker: React.FC = () => {
                   <span className="text-3xl">💡</span>
                   <p className="text-sm font-black text-[#065F46] leading-snug">
                     <span className="block uppercase text-[10px] opacity-60 mb-1">Parenting Pro Tip</span>
-                    Focus on interactive play with textures and high-contrast colors today!
+                    Soothe gums. Nap safely.
                   </p>
                 </div>
               </div>

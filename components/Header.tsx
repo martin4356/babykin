@@ -11,12 +11,10 @@ const Header: React.FC = () => {
       <div className="flex w-full items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
-          <div className="w-11 h-11 bg-gradient-to-br from-[#FFCFBC] to-[#FF6B6B] rounded-[18px] flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform">
-             <span className="text-2xl">🧸</span>
+          <div className="flex items-center justify-center transition-transform">
+            <img src="src/logo.png" alt="BabyKins Logo" className="" />
           </div>
-          <h1 className="text-2xl font-black font-nunito tracking-tight text-[#332D2D]">
-            Baby<span className="text-[#FF6B6B]">Kins</span>
-          </h1>
+          
         </div>
 
         {/* Search Bar - Vibrant Style */}

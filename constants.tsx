@@ -3,8 +3,8 @@ import { Category, Product, Milestone, Review } from './types';
 
 export const CATEGORIES: Category[] = [
   { id: '1', name: 'Teething', icon: '🦷', color: '#FEF3C7' }, // Lemon
-  { id: '2', name: 'Bathing', icon: '🛁', color: '#A7F3D0' }, // Mint
-  { id: '3', name: 'Food', icon: '🥣', color: '#E0E7FF' }, // Lavender
+  { id: '2', name: 'Travel', icon: '🛁', color: '#A7F3D0' }, // Mint
+  { id: '3', name: 'Mealtime', icon: '🥣', color: '#E0E7FF' }, // Lavender
   { id: '4', name: 'Safety', icon: '🛡️', color: '#FFCFBC' }, // Peach
 ];
 
@@ -53,7 +53,7 @@ export const MILESTONES: Milestone[] = [
   {
     id: 0,
     age: '0-3 Mo',
-    title: 'Tummy Time Fun',
+    title: 'Gentle Beginnings',
     description: 'Baby is starting to push up and look around! A huge step in core development.',
     icon: '🐢',
     recommendations: [PRODUCTS[0], PRODUCTS[3]]

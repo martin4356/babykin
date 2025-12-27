@@ -17,10 +17,6 @@ const QuizSection: React.FC = () => {
     {
       q: "What's your biggest need right now?",
       options: ["Gentle Bathing", "Better Sleep", "Smooth Feeding", "Play & Grow"]
-    },
-    {
-      q: "Any skin sensitivities?",
-      options: ["Normal Skin", "Very Sensitive", "Dry Skin", "Eczema Prone"]
     }
   ];
 
@@ -60,7 +56,7 @@ const QuizSection: React.FC = () => {
                 >
                   <ArrowLeft className="w-4 h-4" /> Back
                 </button>
-                <span className="text-xs font-bold text-[#FF8F7A] uppercase tracking-[0.2em]">Question {step + 1} of 3</span>
+                <span className="text-xs font-bold text-[#FF8F7A] uppercase tracking-[0.2em]">Question {step + 1} of 2</span>
              </div>
 
              <h2 className="text-3xl lg:text-5xl font-extrabold text-[#2F2F2F] mb-12 font-nunito text-center leading-tight">

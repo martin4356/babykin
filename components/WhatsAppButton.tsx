@@ -28,13 +28,13 @@ const WhatsAppButton: React.FC = () => {
              <div className="w-8 h-8 bg-[#25D366]/20 rounded-full flex items-center justify-center text-xl">💬</div>
              <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#2F2F2F]/40">Online Expert</p>
-                <p className="text-sm font-bold text-[#2F2F2F]">Need help choosing?</p>
+                <p className="text-sm font-bold text-[#2F2F2F]">Real Support. No Bots. Just Care</p>
              </div>
           </div>
         </div>
       )}
       
-      <a 
+      {/* <a 
         href="https://wa.me/91180054375683" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const WhatsAppButton: React.FC = () => {
           <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 border-2 border-white rounded-full animate-ping" />
         )}
         <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 border-2 border-white rounded-full flex items-center justify-center text-[10px] font-bold">1</span>
-      </a>
+      </a> */}
       
       <style>{`
         @keyframes slideLeft {

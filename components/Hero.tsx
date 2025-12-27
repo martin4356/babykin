@@ -5,8 +5,8 @@ import { Heart, ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-r
 const SLIDES = [
   {
     tag: "Cloud Soft Comfort",
-    title: "Gentle Hugs For Tiny Ones",
-    subtitle: "Premium organic cotton essentials that feel as light as air. Loved by 50k+ Indian moms.",
+    title: "Safety That Clicks. Comfort That Cushions",
+    subtitle: "ISOFIX installation for a secure, error-free fit—paired with extra cushioning for superior comfort on every ride",
     img: "https://images.unsplash.com/photo-1544126592-807daa2b567b?auto=format&fit=crop&w=1000&q=80",
     theme: "from-[#FFCFBC] to-[#FF6B6B]",
     icon: "☁️"
@@ -14,15 +14,15 @@ const SLIDES = [
   {
     tag: "Smart Playtime",
     title: "Unlock Their Little Magic",
-    subtitle: "Eco-toys designed for small hands and big imaginations. Safe, colorful, and non-toxic.",
+    subtitle: "Crafted from food-grade, BPA-free silicone for safe chewing and effortless cleaning.",
     img: "https://images.unsplash.com/photo-1555133539-7a355625ee3e?auto=format&fit=crop&w=1000&q=80",
     theme: "from-[#A7F3D0] to-[#10B981]",
     icon: "🎨"
   },
   {
     tag: "Pure Nutrition",
-    title: "Yummy Bites, Pure Love",
-    subtitle: "Fresh organic meals sourced from Indian farms. No preservatives, just real food goodness.",
+    title: "Every Bite, Just Right",
+    subtitle: "Our color-changing spoon indicates hot food, while the suction base keeps every meal mess-free.",
     img: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1000&q=80",
     theme: "from-[#FEF3C7] to-[#F59E0B]",
     icon: "🍼"

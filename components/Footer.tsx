@@ -9,18 +9,15 @@ const Footer: React.FC = () => {
         {/* Brand Column */}
         <div className="space-y-6">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#FFD6C9] rounded-full flex items-center justify-center">
-               <span className="text-xl">🧸</span>
+            <div className="flex items-center justify-center">
+                <img src="src/logo.png" alt="BabyKins Logo" className="" />
             </div>
-            <h2 className="text-xl font-bold font-nunito tracking-tight text-[#3A3A3A]">
-              Baby<span className="text-[#FF8F7A]">Kins</span>
-            </h2>
           </div>
           <p className="text-[#3A3A3A]/60 text-sm leading-relaxed">
             Nurturing the next generation with products as gentle as a parent's touch. Built with love in India, for parents everywhere.
           </p>
           <div className="flex gap-4">
-            {[Facebook, Instagram, Twitter, Youtube].map((Icon, idx) => (
+            {[Facebook, Instagram, Youtube].map((Icon, idx) => (
               <a 
                 key={idx} 
                 href="#" 
@@ -34,23 +31,23 @@ const Footer: React.FC = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-bold text-[#3A3A3A] mb-6">Parent Shop</h4>
+          <h4 className="font-bold text-[#3A3A3A] mb-6">Safety & Trust</h4>
           <ul className="space-y-4 text-sm text-[#3A3A3A]/60">
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Milk Powders & Food</a></li>
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Diapers & Hygiene</a></li>
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Safety Toys</a></li>
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Toddler Fashion</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">ISOFIX Safety Standards</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Rearward vs Forward Facing Guide</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Feeding Safety (Food-Grade Silicone)</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Why Babykins?</a></li>
           </ul>
         </div>
 
         {/* Support */}
         <div>
-          <h4 className="font-bold text-[#3A3A3A] mb-6">Parent Care</h4>
+          <h4 className="font-bold text-[#3A3A3A] mb-6">Support</h4>
           <ul className="space-y-4 text-sm text-[#3A3A3A]/60">
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Track Your Order</a></li>
-            <li><li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Privacy & Safety</a></li></li>
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Shipping Policy</a></li>
-            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Contact Expert</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Installation Help</a></li>
+            <li><li><a href="#" className="hover:text-[#FF8F7A] transition-colors">FAQs</a></li></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Returns & Warranty</a></li>
+            <li><a href="#" className="hover:text-[#FF8F7A] transition-colors">Contact Us</a></li>
           </ul>
         </div>
 
@@ -58,9 +55,9 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="font-bold text-[#3A3A3A] mb-6">Get in Touch</h4>
           <div className="space-y-4 text-sm text-[#3A3A3A]/60">
-            <p className="flex items-center gap-2">📞 +91 1800-KIDS-LOVE</p>
-            <p className="flex items-center gap-2">✉️ care@babykins.in</p>
-            <p className="flex items-center gap-2">📍 Bandra East, Mumbai, India</p>
+            <p className="flex items-center gap-2">📞 +91 79725 04903</p>
+            <p className="flex items-center gap-2">✉️ info@babykins.in</p>
+            <p className="flex items-center gap-2">📍 1045, Pune, Maharashtra, India</p>
             <div className="mt-6 pt-6 border-t border-beige-100">
                <span className="text-[10px] font-bold uppercase tracking-widest block mb-2">Accepted Payments</span>
                <div className="flex gap-2 opacity-50">
