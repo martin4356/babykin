@@ -53,16 +53,16 @@ const Hero: React.FC = () => {
       ))}
 
       <div className="relative w-full h-full max-w-7xl mx-auto px-6 lg:px-12 flex items-center z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+        <div className="grid md:grid-cols-2 gap-40 items-center w-full">
           {/* Text Content */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left ml-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 shadow-sm border border-[#FF6B6B]/20 mb-6 bouncy-pop">
               <span className="text-xl">{SLIDES[current].icon}</span>
               <span className="text-xs font-bold uppercase tracking-widest text-[#FF6B6B]">{SLIDES[current].tag}</span>
               <Sparkles className="w-3 h-3 text-[#FF6B6B]" />
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-[#332D2D] leading-[1.1] mb-6 font-nunito tracking-tight">
+            <h1 className="text-3xl lg:text-5xl font-extrabold text-[#332D2D] leading-[1.1] mb-5 font-nunito tracking-tight">
               {SLIDES[current].title.split(' ').map((word, i) => (
                 <span key={i} className={i % 2 !== 0 ? 'text-[#FF6B6B]' : ''}>
                   {word}{' '}

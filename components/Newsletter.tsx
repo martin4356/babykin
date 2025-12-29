@@ -4,16 +4,16 @@ import { Send } from 'lucide-react';
 
 const Newsletter: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-white relative">
-      <div className="max-w-5xl mx-auto rounded-[60px] bg-gradient-to-br from-[#FFE8E0] via-[#FDFBF7] to-[#E8F4FF] p-16 lg:p-24 text-center relative overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.05)] border-4 border-white">
+    <section className="py-10 px-6 bg-white relative">
+      <div className="max-w-5xl mx-auto rounded-[60px] bg-gradient-to-br from-[#FFE8E0] via-[#FDFBF7] to-[#E8F4FF] p-10 lg:p-14 text-center relative overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.05)] border-4 border-white">
         {/* Decorative background bubbles */}
         <div className="absolute -top-10 -left-10 w-64 h-64 bg-white/60 rounded-full blur-3xl animate-pulse" />
         <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-[#FF8F7A]/30 rounded-full blur-3xl" />
         
         <div className="relative z-10 max-w-2xl mx-auto">
           <span className="text-6xl mb-8 block animate-bounce">🎁</span>
-          <h2 className="text-4xl lg:text-5xl font-extrabold font-nunito mb-8 text-[#3A3A3A] tracking-tight">
-            Join the BabyKins family and get <span className="text-[#FF8F7A]">gentle surprises</span> 💛
+          <h2 className="text-3xl lg:text-4xl font-extrabold font-nunito mb-8 text-[#3A3A3A] tracking-tight">
+            Join the Babykins family and get <span className="text-[#FF8F7A]">gentle surprises</span> 💛
           </h2>
           <p className="text-xl text-[#3A3A3A]/70 mb-12 font-medium">
             Expert parenting tips, early access to new collections, and a sweet <span className="text-[#FF8F7A] font-bold">10% Off</span> your first order.

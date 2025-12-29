@@ -7,10 +7,10 @@ const Reviews: React.FC = () => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   return (
-    <section className="py-24 bg-[#F6F1EB]/50 overflow-hidden">
+    <section className="py-10 bg-[#F6F1EB]/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-extrabold font-nunito mb-4 tracking-tight">Parents Who Gave Us 5 Stars</h2>
+          <h2 className="text-3xl lg:text-4xl font-extrabold font-nunito mb-4 tracking-tight">Parents Who Gave Us 5 Stars</h2>
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="flex gap-1">
                {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-[#FFD6C9] text-[#FFD6C9]" />)}
@@ -52,7 +52,7 @@ const Reviews: React.FC = () => {
 
                 <div className={`overflow-hidden transition-all duration-500 ${expandedId === review.id ? 'max-h-[500px]' : 'max-h-[80px]'}`}>
                   <p className="text-[#2F2F2F]/80 leading-relaxed font-medium text-lg italic mb-6">
-                    "{review.comment} I was skeptical at first about switching brands, but BabyKins has proven to be the most gentle and effective solution for my little one's diaper rash and daily bath needs."
+                    "{review.comment} I was skeptical at first about switching brands, but Babykins has proven to be the most gentle and effective solution for my little one's diaper rash and daily bath needs."
                   </p>
                 </div>
                 

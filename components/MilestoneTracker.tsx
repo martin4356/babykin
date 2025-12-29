@@ -59,7 +59,7 @@ const MilestoneTracker: React.FC = () => {
               <button
                 key={m.id}
                 onClick={() => setActiveId(m.id)}
-                className={`group relative flex items-center gap-6 p-6 rounded-[35px] transition-all duration-500 text-left border-4 ${
+                className={`group relative flex items-center gap-6 p-3 rounded-[35px] transition-all duration-500 text-left border-4 ${
                   activeId === m.id ? 'bg-white border-[#FF6B6B] shadow-2xl -translate-y-1 scale-105' : 'bg-white/40 border-transparent hover:bg-white/80'
                 }`}
               >
@@ -82,7 +82,7 @@ const MilestoneTracker: React.FC = () => {
           </div>
 
           {/* Active Milestone Card */}
-          <div className="flex-1 w-full bg-white rounded-[60px] p-10 md:p-16 shadow-2xl relative overflow-hidden group">
+          <div className="flex-1 w-full bg-white rounded-[60px] p-10 md:p-10 shadow-2xl relative overflow-hidden group">
             <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#FFCFBC]/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
             
             <div className="relative z-10 grid md:grid-cols-2 gap-16 items-center">

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="space-y-6">
           <div className="flex items-center gap-2">
             <div className="flex items-center justify-center">
-                <img src="src/logo.png" alt="BabyKins Logo" className="" />
+                <img src="src/logo.png" alt="Babykins Logo" className="" />
             </div>
           </div>
           <p className="text-[#3A3A3A]/60 text-sm leading-relaxed">
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           <h4 className="font-bold text-[#3A3A3A] mb-6">Get in Touch</h4>
           <div className="space-y-4 text-sm text-[#3A3A3A]/60">
             <p className="flex items-center gap-2">📞 +91 79725 04903</p>
-            <p className="flex items-center gap-2">✉️ info@babykins.in</p>
+            <p className="flex items-center gap-2">✉️ info@Babykins.in</p>
             <p className="flex items-center gap-2">📍 1045, Pune, Maharashtra, India</p>
             <div className="mt-6 pt-6 border-t border-beige-100">
                <span className="text-[10px] font-bold uppercase tracking-widest block mb-2">Accepted Payments</span>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 pt-10 border-t border-beige-100 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-[10px] text-[#3A3A3A]/40 font-bold uppercase tracking-widest">© 2024 BabyKins India. All rights reserved.</p>
+        <p className="text-[10px] text-[#3A3A3A]/40 font-bold uppercase tracking-widest">© 2024 Babykins India. All rights reserved.</p>
         <div className="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-[#3A3A3A]/40">
           <a href="#" className="hover:text-[#3A3A3A]">Terms</a>
           <a href="#" className="hover:text-[#3A3A3A]">Privacy</a>

@@ -41,7 +41,7 @@ const QuizSection: React.FC = () => {
     <section className="py-24 bg-[#DCEEFF]/30">
       <div className="max-w-4xl mx-auto px-6">
         {!showResult ? (
-          <div className="bg-white rounded-[50px] p-12 lg:p-20 shadow-2xl relative overflow-hidden">
+          <div className="bg-white rounded-[50px] p-8 lg:p-8 shadow-2xl relative overflow-hidden">
              <div className="absolute top-0 left-0 w-full h-2 bg-[#F6F1EB]">
                 <div 
                   className="h-full bg-[#FF8F7A] transition-all duration-700"
@@ -59,7 +59,7 @@ const QuizSection: React.FC = () => {
                 <span className="text-xs font-bold text-[#FF8F7A] uppercase tracking-[0.2em]">Question {step + 1} of 2</span>
              </div>
 
-             <h2 className="text-3xl lg:text-5xl font-extrabold text-[#2F2F2F] mb-12 font-nunito text-center leading-tight">
+             <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2F2F2F] mb-12 font-nunito text-center leading-tight">
                 {questions[step].q}
              </h2>
 
@@ -68,7 +68,7 @@ const QuizSection: React.FC = () => {
                   <button
                     key={opt}
                     onClick={() => handleSelect(opt)}
-                    className="group relative bg-[#F6F1EB]/50 border-2 border-transparent hover:border-[#FFD6C9] hover:bg-white p-8 rounded-[30px] transition-all duration-300 flex items-center justify-between text-left shadow-sm hover:shadow-xl"
+                    className="group relative bg-[#F6F1EB]/50 border-2 border-transparent hover:border-[#FFD6C9] hover:bg-white p-4 rounded-[30px] transition-all duration-300 flex items-center justify-between text-left shadow-sm hover:shadow-xl"
                   >
                     <span className="text-lg font-extrabold text-[#2F2F2F]">{opt}</span>
                     <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center transition-all group-hover:bg-[#FF8F7A] group-hover:text-white group-hover:rotate-[-45deg]">

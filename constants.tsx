@@ -98,7 +98,7 @@ export const REVIEWS: Review[] = [
     name: 'Karan Mehra',
     city: 'Pune',
     rating: 5,
-    comment: 'I was looking for a modern Indian brand and BabyKins is it. Vibrant, safe, and truly high quality.',
+    comment: 'I was looking for a modern Indian brand and Babykins is it. Vibrant, safe, and truly high quality.',
     avatar: 'https://i.pravatar.cc/150?u=karan'
   }
 ];

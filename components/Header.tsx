@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center gap-3 group cursor-pointer hover:scale-105 transition-transform duration-300">
           <div className="flex items-center justify-center transition-transform">
-            <img src="src/logo.png" alt="BabyKins Logo" className="" />
+            <img src="src/logo.png" alt="Babykins Logo" className="" />
           </div>
           
         </div>

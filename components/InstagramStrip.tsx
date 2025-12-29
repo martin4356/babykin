@@ -12,16 +12,16 @@ const InstagramStrip: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-center md:text-left">
           <h3 className="text-3xl lg:text-4xl font-black font-nunito text-[#332D2D] tracking-tight">Join Our Little <span className="text-[#FF6B6B]">Community</span></h3>
           <p className="text-[#332D2D]/50 font-black text-[11px] uppercase tracking-widest mt-2 flex items-center justify-center md:justify-start gap-2">
-            <Instagram className="w-4 h-4 text-[#FF6B6B]" /> Share your moments with #BabyKinsFamily
+            <Instagram className="w-4 h-4 text-[#FF6B6B]" /> Share your moments with #BabykinsFamily
           </p>
         </div>
         <button className="bg-[#332D2D] text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest hover:bg-[#FF6B6B] transition-all shadow-xl">
-          Follow @BabyKinsIndia
+          Follow @BabykinsIndia
         </button>
       </div>
 
